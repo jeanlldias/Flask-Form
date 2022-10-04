@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, redirect, url_for
-from db_teste import add_text, get_data
+from db import add_text, get_data
 app = Flask(__name__)
 
 @app.route("/")
