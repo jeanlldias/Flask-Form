@@ -1,4 +1,3 @@
-#https://medium.com/analytics-vidhya/flask-html-template-with-mysql-2f3b9405d0e2
 from flask import Flask, request, render_template, redirect, url_for
 from db_teste import add_text, get_data
 app = Flask(__name__)
