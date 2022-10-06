@@ -3,7 +3,7 @@
 py -m venv flask-form
 
 2- Comando para ativar ambiente virtual
-.\flask-api\Scripts\activate
+.\flask-form\Scripts\activate
 
 3- Comando para instalar o Flask
 py -m pip install flask
