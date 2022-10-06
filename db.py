@@ -4,7 +4,7 @@ connection = pymysql.connect(host="localhost", user="root", passwd="12345678", d
 cursor = connection.cursor()
 
 #inserting data to db
-def add_text(add_text):
+def add_text(name):
     cursor.execute("INSERT INTO form(ID, name) VALUES (DEFAULT, %s)", (name))
     connection.commit()
     return 1

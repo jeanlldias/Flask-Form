@@ -1,0 +1,33 @@
+#Configurando o Python
+1- Comando para criar ambiente virtual
+py -m venv flask-form
+
+2- Comando para ativar ambiente virtual
+.\flask-api\Scripts\activate
+
+3- Comando para instalar o Flask
+py -m pip install flask
+
+4- Comando para criar variaveis de ambiente
+py -m pip install python-dotenv
+
+5- Após criar arquivo .flaskenv e adicionar a linha abaixo:
+FLASK_ENV=development
+ 
+6 - Rodar o projeto do Flask
+flask run ou py -m flask run
+
+#Deve-se instalar os seguintes plugins do Python
+
+pip install pymysql
+
+#Após, verificar a conexão com o banco de dados e criar a base de dados e tabela para receber os campos
+
+create database testes;
+
+use testes;
+CREATE TABLE IF NOT EXISTS form (
+  id INT auto_increment,
+  name VARCHAR(45),
+  PRIMARY KEY (id) );
+
